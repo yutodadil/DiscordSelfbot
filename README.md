@@ -8,7 +8,6 @@
   </a>
   <a href="https://github.com/yutodadil/DiscordSelfbot/issues">
   <img src="https://img.shields.io/github/issues/yutodadil/DiscordSelfbot?style=for-the-badge&logo=appveyor&color=informational" />
-  <a herf="https://github.com/yutodadil/DiscordSelfbot/pulls">
   <img src="https://img.shields.io/github/issues-pr/yutodadil/DiscordSelfbot?style=for-the-badge&logo=appveyor&color=informational" />
   </a>
 </p>
