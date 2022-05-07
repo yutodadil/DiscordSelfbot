@@ -1,0 +1,5 @@
+discord
+request
+pypresence
+beautifulsoup4
+captcha
