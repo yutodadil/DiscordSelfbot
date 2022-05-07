@@ -11,6 +11,7 @@
   <img src="https://img.shields.io/github/issues-pr/yutodadil/DiscordSelfbot?style=for-the-badge&logo=appveyor&color=informational" />
   </a>
 </p>
+
 ## これらは知的好奇心を満たす為に作られました。<br>DDoS系のコマンドもファイルを実行すれば可能ですが攻撃する際は相手のサイト所有者に許可を取る又は許可されたウェブサイトのみ攻撃してください！</br>
 
 ---
