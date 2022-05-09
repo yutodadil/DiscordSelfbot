@@ -119,3 +119,9 @@ http-rawのよくある攻撃手法です。
  
 {prefix}httpbypass [url] [time(seconds)]
 ```
+
+---
+
+Run This Programs
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/yutodadil/DiscordSelfbot/tree/rewrite)<br>
+[![Run on Repl.it](https://replit.com/badge/github/yutodadil/DiscordSelfbot)](https://repl.it/github/yutodadil/DiscordSelfbot)
