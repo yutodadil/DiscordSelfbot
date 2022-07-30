@@ -1291,12 +1291,13 @@ async def stopauto(ctx):
 	turn = 0
 
 @bot.command()
-async def listen(ctx):
+async def listen(ctx, *, string: str):
   await ctx.message.delete()
-  await ctx.send("Please Check Console\n Please Enter a input.")
-  inp = input("Change to?\n-> ")
-  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=inp))
-  await ctx.send(f"Change to Activity Status, Listen of {inp}")
+#  await ctx.send("Please Check Console\n Please Enter a input.")
+#  inp = input("Change to?\n-> ")
+  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=string))
+  await ctx.send(f"Change to Activity Status, Listen of {string}")
+# Thanks For Shiumano
 
 @bot.event
 async def on_ready():
