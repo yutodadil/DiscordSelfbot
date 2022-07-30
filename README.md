@@ -64,6 +64,9 @@ Textキャプチャを生成します
  
 {prefix}backup
 そのまんま
+
+{prefix}listen [Name]
+Change a Activity Status
  
 ~Mirrativ系~
 {prefix}おすすめ
