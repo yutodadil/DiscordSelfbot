@@ -1290,9 +1290,19 @@ async def stopauto(ctx):
 	sent = 1
 	turn = 0
 
+@bot.command()
+async def listen(ctx):
+  await ctx.message.delete()
+  await ctx.send("Please Check Console\n Please Enter a input.")
+  inp = input("Change to?\n-> ")
+  await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=inp))
+  await ctx.send(f"Change to Activity Status, Listen of {inp}")
+
 @bot.event
 async def on_ready():
   clear()
+  activity = discord.Game(name="Awesome Code", type=4)
+  await bot.change_presence(status=discord.Status.online, activity=activity)
   print(f"""
 \x1b[38;2;155;83;219m ▄▄▄       █    ██ ▄▄▄█████▓ ▒█████    ██████  ▄▄▄       ███▄    █ ▓█████▄ ▓█████  ██▀███  
 \x1b[38;2;242;104;231m▒████▄     ██  ▓██▒▓  ██▒ ▓▒▒██▒  ██▒▒██    ▒ ▒████▄     ██ ▀█   █ ▒██▀ ██▌▓█   ▀ ▓██ ▒ ██▒
