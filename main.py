@@ -53,6 +53,8 @@ prefix = "au!"
 
 token = input(f"{Fore.LIGHTCYAN_EX}Your Token Here:")
 
+music = "Awesome Code"
+
 length_of_string = 4
 
 Test2 = 8
@@ -1292,17 +1294,19 @@ async def stopauto(ctx):
 
 @bot.command()
 async def listen(ctx, *, string: str):
+  global music
   await ctx.message.delete()
 #  await ctx.send("Please Check Console\n Please Enter a input.")
 #  inp = input("Change to?\n-> ")
   await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=string))
   await ctx.send(f"Change to Activity Status, Listen of {string}")
 # Thanks For Shiumano
+  music = string
 
 @bot.event
 async def on_ready():
   clear()
-  activity = discord.Game(name="Awesome Code", type=4)
+  activity = discord.Game(name=music, type=4)
   await bot.change_presence(status=discord.Status.online, activity=activity)
   print(f"""
 \x1b[38;2;155;83;219m ▄▄▄       █    ██ ▄▄▄█████▓ ▒█████    ██████  ▄▄▄       ███▄    █ ▓█████▄ ▓█████  ██▀███  
